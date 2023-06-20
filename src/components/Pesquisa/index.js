@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useState } from "react"
 import { useEffect } from "react"
 import { getLivros } from "../../Services/livros"
+import { postFavorites } from "../../Services/favorites"
 
 
 
@@ -55,6 +56,11 @@ function Pesquisa() {
     async function fetchLivros() {
     const livrosDaApi = await getLivros()
     setLivros(livrosDaApi)
+    }
+
+    async function insertFavorite (id) {
+    await postFavorites(id)
+    alert (`Livro de ID ${id} inserido nos favoritos`)
 }    
     return (
         <SearchContainer>
@@ -74,14 +80,15 @@ function Pesquisa() {
                }
             />
            {livrosPesquisados.map ( livro => (
-            <Resultado>
-                    <img src={livro.src} alt="imglivro"/>
+            <Resultado onClick={() => insertFavorite (livro.id)}>
+                    
                     <p>{livro.nome}</p>
             </Resultado>
      ))} 
         </SearchContainer>
         
     )
-}
+ }
+
 export default Pesquisa
 
