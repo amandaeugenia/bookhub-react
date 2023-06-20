@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
-const opcoes = ['Favoritos', 'Categorias', 'Estante'];
+const opcoes = ['Favs', 'Categorias', 'Estante'];
 const UlHeader = styled.ul `
 display: flex;
 margin-left: auto;

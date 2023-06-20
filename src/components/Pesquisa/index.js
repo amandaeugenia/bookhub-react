@@ -4,6 +4,8 @@ import { useState } from "react"
 import { useEffect } from "react"
 import { getLivros } from "../../Services/livros"
 
+
+
 const SearchContainer = styled.section`
         background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
         color: #FFF;
@@ -51,8 +53,8 @@ function Pesquisa() {
 
 
     async function fetchLivros() {
-    const livrossDaApi = await getLivros()
-    setLivros(livrossDaApi)
+    const livrosDaApi = await getLivros()
+    setLivros(livrosDaApi)
 }    
     return (
         <SearchContainer>
