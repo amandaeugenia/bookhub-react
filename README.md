@@ -1,7 +1,7 @@
 ![1](https://github.com/amandaeugenia/bookhub-react/assets/96313657/8d2b11ba-870a-413e-8b9d-22e17e43d59e)
 ![2](https://github.com/amandaeugenia/bookhub-react/assets/96313657/d9279754-c1d1-44e0-a3f7-0302855fdf6d)
 
-Página Home dividida por 2 sessoões, onde podemos pesquisar por livros e ter acesso às disponibilidades da página.
+Página Home dividida por 2 sessões, onde podemos pesquisar por livros e ter acesso às disponibilidades da página.
 
 ![3](https://github.com/amandaeugenia/bookhub-react/assets/96313657/4b94000c-f356-40c1-b487-4164c4cba66a)
 ![4](https://github.com/amandaeugenia/bookhub-react/assets/96313657/46b4288a-146b-4e0d-bc1e-99422d1ae5e5)
