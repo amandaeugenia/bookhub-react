@@ -1,5 +1,4 @@
 import user from '../../images/user.png'
-import search from '../../images/search.png'
 import styled from 'styled-components'
 
 const Icone = styled.li`
@@ -21,15 +20,16 @@ justify-content: space between;
 gap: 10px;
 
 `
-const icones = [user, search]
+const icones = [user]
 
 function IconesHeader() {
     return (
         <Icones>
             { icones.map( (icone) => (
-            <Icone><img src={icone}></img></Icone>
+             <Icone><img src={icone}></img></Icone>
             )) }
         </Icones>
     )
 }
 export default IconesHeader
+
